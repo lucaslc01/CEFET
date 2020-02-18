@@ -1,0 +1,90 @@
+% Definição do tamanho da letra, folha e estilo.
+\documentclass[12pt, a4paper]{article}
+
+% Definição de pacotes.
+%% Padrão UTF-8.
+%% Texto brasileiro.
+%% Geometria da página de acordo com a ABNT.
+\usepackage[utf8]{inputenc}
+\usepackage[brazil]{babel}
+\usepackage{indentfirst}
+\usepackage{geometry}
+\geometry{a4paper, left = 3cm, right = 3cm, top = 3cm, bottom = 3cm}
+
+% Numeração da página.
+\pagenumbering{arabic}
+
+\title{\textbf{\textit{Datapath} de um Processador Multi-ciclo}}
+\author{
+	Guimarães, João Guilherme M.\\
+	\texttt{joaog95@live.com}
+	\and
+	Muniz, Lucas L. R.\\
+	\texttt{lucaslc01@hotmail.com}
+}
+\date{\today}
+
+\begin{document}
+	% Escrever o título, autor e data.
+	\maketitle
+	
+	% Espaçamento vertical
+	\vspace{1cm}
+	
+	% Nova seção
+	\section{Objetivo da prática}
+	
+	\par A nona aula prática da disciplina de Laboratório de Arquitetura de Computadores I, teve como objetivo realizar modificações no código do processador multi-ciclo desenvolvido na aula anterior, estas mudanças são:
+	
+	\begin{itemize}
+		\item Os registradores no formato da instrução passam a ter 4 bits;
+
+		\item Mudança na relação entre os registradores de cada instrução e
+
+		\item Mudança no \textit{Opcode} de algumas instruções.
+	\end{itemize}
+
+    \section{Descrição das Atividades}
+
+    \par O aumento de um bit de endereçamento no formato da instrução, permitiu que \textbf{RF} tivesse um acréscimo de 8 registradores, passando assim de 8 para 16, e para manter o padrão de projeto, o registrador referente ao \textbf{PC} também foi alterado, estando agora na posição 15, a última posição de \textbf{RF}.
+    
+    \vspace{\baselineskip}
+    
+    \par As alterações entre as relações dos registradores de cada instrução, acarretou na criação de uma nova variável de controle, \textit{WriteReg}, possibilitando com que as novas instruções possam salvar seus dados em um dos 3 registradores, \textbf{X}, \textbf{Y} e \textbf{Z}, sendo que antes, o registrador \textbf{X} era fixo.
+
+    \vspace{\baselineskip}
+    
+    \par Um resumo do que foi descrito acima, se encontra listado logo abaixo.
+    
+    \begin{itemize}
+		\item Expansão de \textbf{RF} de 8 para 16 registradores;
+
+        \item Substituição do registrador referente ao \textbf{PC} para a posição 15;
+
+        \item Criação da nova variável de controle \textit{WriteReg};
+    \end{itemize}
+
+    \section{Simulação}
+    
+    \par Após as modificações necessárias, iniciamos a simulação utilizando a instrução \textit{copy input}, devido ao fato da extrema necessidade de inicialização dos registradores nas demais instruções.
+    
+	\begin{itemize}
+		\item[1 Copy Input] description
+	\end{itemize}
+	
+	\section{Dificuldades}
+	
+	\par As principais dificuldades obtidas no desenvolvimento desta prática foram:
+	
+	\begin{enumerate}
+		\item Encontrar e resolver o erro na instrução \textit{conditional copy}, já que a mesma realizava o inverso do proposto (executava o processo de \textit{copy} somente quando o valor na \textbf{ULA} era diferente de 0) e
+
+        \item Realizar os testes de cada instrução após as alterações, o que resulta em um total de 9 testes.
+	\end{enumerate}
+
+	\section{Conclusão}
+	
+	\par Com a execução desta prática, pudemos aperfeiçoar nossos conhecimentos em projetos de processadores multi-ciclos e da linguagem Verilog, além de exercitar o trabalho em equipe.
+
+\end{document}
+	

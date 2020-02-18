@@ -1,0 +1,11 @@
+//projeto de uma porta xor
+//descricao do fluxo de dados
+module porta_exor (Y,A,B)
+
+//definicao da sxaida Y e das entradas A e B
+output Y;
+input A,B;
+
+//funcionadlidade do circuito
+assign Y =((~A) & B) | (A & (~B));
+endmodule

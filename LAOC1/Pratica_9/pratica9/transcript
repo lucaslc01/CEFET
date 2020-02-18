@@ -1,0 +1,370 @@
+# Loading project pratica9
+# Load canceled
+do simulation/AND/and.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Error: (vish-4014) No objects found matching 'NewSig:sim:/system/clock'.
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+# Executing ONERROR command at macro ./simulation/AND/and.do line 48
+# ** Error: (vish-4014) No objects found matching 'NewSig:sim:/system/reset'.
+# Usage: wave create -pattern <clock|constant|random|repeater|counter|none> <args>
+# See Command Reference manual for pattern specific <args>
+# Executing ONERROR command at macro ./simulation/AND/and.do line 49
+# ** Error: Netname is not editable or not present in the active waveform window
+# Usage:wave modify -driver <freeze|deposit|drive|expectedOutput> -pattern repeater -initialvalue <value> -period <Time> -startvalues <[values]+> -endvalues -repeat {<value>|forever|never} [-range <msb lsb>] -starttime <Time> -endtime <Time> netName
+# Executing ONERROR command at macro ./simulation/AND/and.do line 50
+# 0
+# Compile of memory_main.v was successful.
+# Compile of processor.v was successful.
+# Compile of system.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of alu.v was successful.
+# Compile of mux4_1_16bits.v was successful.
+# Compile of register16bits.v was successful.
+# Compile of register16bits_i.v was successful.
+# Compile of decoder.v was successful.
+# Compile of PC_reg7.v was successful.
+# 10 compiles, 0 failed with no errors. 
+vsim work.system
+# vsim work.system 
+# Loading work.system
+# Loading work.processor
+# Loading work.registerFile
+# Loading work.decoder
+# Loading work.PC_reg7
+# Loading work.register16bits
+# Loading work.mux4_1_16bits
+# Loading work.alu
+# Loading work.register16bits_i
+# Loading work.memory_main
+do simulation/AND/and.do
+# .main_pane.wave.interior.cs.body.pw.wf
+# 1
+add wave -position 1 -format Logic -height 18 -editable 2 Edit:/system/Clock
+add wave -position 2 -format Logic -height 18 -editable 2 Edit:/system/Reset
+run -all
+add wave -position insertpoint  \
+{sim:/system/proc1/rf/register[2]}
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/joao/altera/LAOCI/Pratica_9/pratica9/simulation/OR/or.do
+wave editwrite -file /home/joao/altera/LAOCI/Pratica_9/pratica9/simulation/OR/or.do -append
+# Compile of memory_main.v was successful.
+# Compile of processor.v was successful.
+# Compile of system.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of alu.v was successful.
+# Compile of mux4_1_16bits.v was successful.
+# Compile of register16bits.v was successful.
+# Compile of register16bits_i.v was successful.
+# Compile of decoder.v was successful.
+# Compile of PC_reg7.v was successful.
+# 10 compiles, 0 failed with no errors. 
+restart
+# Loading work.system
+# Loading work.processor
+# Loading work.registerFile
+# Loading work.decoder
+# Loading work.PC_reg7
+# Loading work.register16bits
+# Loading work.mux4_1_16bits
+# Loading work.alu
+# Loading work.register16bits_i
+# Loading work.memory_main
+run -all
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/joao/altera/LAOCI/Pratica_9/pratica9/simulation/ADD/add.do
+wave editwrite -file /home/joao/altera/LAOCI/Pratica_9/pratica9/simulation/ADD/add.do -append
+# Compile of memory_main.v was successful.
+# Compile of processor.v was successful.
+# Compile of system.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of alu.v was successful.
+# Compile of mux4_1_16bits.v was successful.
+# Compile of register16bits.v was successful.
+# Compile of register16bits_i.v was successful.
+# Compile of decoder.v was successful.
+# Compile of PC_reg7.v was successful.
+# 10 compiles, 0 failed with no errors. 
+restart
+# Loading work.system
+# Loading work.processor
+# Loading work.registerFile
+# Loading work.decoder
+# Loading work.PC_reg7
+# Loading work.register16bits
+# Loading work.mux4_1_16bits
+# Loading work.alu
+# Loading work.register16bits_i
+# Loading work.memory_main
+run -all
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/joao/altera/LAOCI/Pratica_9/pratica9/simulation/COPY/copy.do
+wave editwrite -file /home/joao/altera/LAOCI/Pratica_9/pratica9/simulation/COPY/copy.do -append
+# Compile of memory_main.v was successful.
+# Compile of processor.v was successful.
+# Compile of system.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of alu.v was successful.
+# Compile of mux4_1_16bits.v was successful.
+# Compile of register16bits.v was successful.
+# Compile of register16bits_i.v was successful.
+# Compile of decoder.v was successful.
+# Compile of PC_reg7.v was successful.
+# 10 compiles, 0 failed with no errors. 
+add wave -position insertpoint  \
+{sim:/system/proc1/rf/register[3]}
+restart
+# Loading work.system
+# Loading work.processor
+# Loading work.registerFile
+# Loading work.decoder
+# Loading work.PC_reg7
+# Loading work.register16bits
+# Loading work.mux4_1_16bits
+# Loading work.alu
+# Loading work.register16bits_i
+# Loading work.memory_main
+run -all
+wave modify -driver freeze -pattern clock -initialvalue St0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 3000ps Edit:/system/Clock
+wave modify -driver freeze -pattern repeater -initialvalue StX -period 100ps -sequence { St1 St0 St0 St0 St0 St0 St0 St0 St0 St0 St0 St0 St0 St0 St0 St0 St0 St0 St0 St0 St0 0 0 0 0 0 0 0 0 0 0  } -repeat forever -starttime 0ps -endtime 3000ps Edit:/system/Reset
+restart
+run -all
+# Compile of memory_main.v was successful.
+# Compile of processor.v was successful.
+# Compile of system.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of alu.v was successful.
+# Compile of mux4_1_16bits.v was successful.
+# Compile of register16bits.v was successful.
+# Compile of register16bits_i.v was successful.
+# Compile of decoder.v was successful.
+# Compile of PC_reg7.v was successful.
+# 10 compiles, 0 failed with no errors. 
+restart
+# Loading work.system
+# Loading work.processor
+# Loading work.registerFile
+# Loading work.decoder
+# Loading work.PC_reg7
+# Loading work.register16bits
+# Loading work.mux4_1_16bits
+# Loading work.alu
+# Loading work.register16bits_i
+# Loading work.memory_main
+run -all
+add wave -position insertpoint  \
+sim:/system/proc1/DataOutMux
+restart
+run -all
+add wave -position insertpoint  \
+sim:/system/proc1/rf/RegWrite
+restart
+run -all
+# Compile of memory_main.v was successful.
+# Compile of processor.v was successful.
+# Compile of system.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of alu.v was successful.
+# Compile of mux4_1_16bits.v was successful.
+# Compile of register16bits.v was successful.
+# Compile of register16bits_i.v was successful.
+# Compile of decoder.v was successful.
+# Compile of PC_reg7.v was successful.
+# 10 compiles, 0 failed with no errors. 
+restart
+# Loading work.system
+# Loading work.processor
+# Loading work.registerFile
+# Loading work.decoder
+# Loading work.PC_reg7
+# Loading work.register16bits
+# Loading work.mux4_1_16bits
+# Loading work.alu
+# Loading work.register16bits_i
+# Loading work.memory_main
+run -all
+# Compile of memory_main.v was successful.
+# Compile of processor.v was successful.
+# Compile of system.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of alu.v was successful.
+# Compile of mux4_1_16bits.v was successful.
+# Compile of register16bits.v was successful.
+# Compile of register16bits_i.v was successful.
+# Compile of decoder.v was successful.
+# Compile of PC_reg7.v was successful.
+# 10 compiles, 0 failed with no errors. 
+restart
+# Loading work.system
+# Loading work.processor
+# Loading work.registerFile
+# Loading work.decoder
+# Loading work.PC_reg7
+# Loading work.register16bits
+# Loading work.mux4_1_16bits
+# Loading work.alu
+# Loading work.register16bits_i
+# Loading work.memory_main
+run -all
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/joao/altera/LAOCI/Pratica_9/pratica9/simulation/CONDICIONAL_COPY/condicional_copy.do
+wave editwrite -file /home/joao/altera/LAOCI/Pratica_9/pratica9/simulation/CONDICIONAL_COPY/condicional_copy.do -append
+# Compile of memory_main.v was successful.
+# Compile of processor.v was successful.
+# Compile of system.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of alu.v was successful.
+# Compile of mux4_1_16bits.v was successful.
+# Compile of register16bits.v was successful.
+# Compile of register16bits_i.v was successful.
+# Compile of decoder.v was successful.
+# Compile of PC_reg7.v was successful.
+# 10 compiles, 0 failed with no errors. 
+restart
+# Loading work.system
+# Loading work.processor
+# Loading work.registerFile
+# Loading work.decoder
+# Loading work.PC_reg7
+# Loading work.register16bits
+# Loading work.mux4_1_16bits
+# Loading work.alu
+# Loading work.register16bits_i
+# Loading work.memory_main
+run -all
+# Compile of memory_main.v was successful.
+# Compile of processor.v was successful.
+# Compile of system.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of alu.v was successful.
+# Compile of mux4_1_16bits.v was successful.
+# Compile of register16bits.v was successful.
+# Compile of register16bits_i.v was successful.
+# Compile of decoder.v was successful.
+# Compile of PC_reg7.v was successful.
+# 10 compiles, 0 failed with no errors. 
+restart
+# Loading work.system
+# Loading work.processor
+# Loading work.registerFile
+# Loading work.decoder
+# Loading work.PC_reg7
+# Loading work.register16bits
+# Loading work.mux4_1_16bits
+# Loading work.alu
+# Loading work.register16bits_i
+# Loading work.memory_main
+wave modify -driver freeze -pattern clock -initialvalue St0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 2000ps Edit:/system/Clock
+wave modify -driver freeze -pattern clock -initialvalue St0 -period 100ps -dutycycle 50 -starttime 0ps -endtime 2000ps Edit:/system/Clock
+wave create -driver freeze -pattern clock -initialvalue HiZ -period 100ps -dutycycle 50 -starttime 0ps -endtime 2000ps sim:/system/Reset
+wave modify -driver freeze -pattern repeater -initialvalue (no value) -period 100ps -sequence { 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0  } -repeat forever -starttime 0ps -endtime 2000ps Edit:/system/Reset
+add wave -position 2 -format Logic -height 18 -editable 2 Edit:/system/Reset
+run -all
+# Compile of memory_main.v was successful.
+# Compile of processor.v was successful.
+# Compile of system.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of alu.v was successful.
+# Compile of mux4_1_16bits.v was successful.
+# Compile of register16bits.v was successful.
+# Compile of register16bits_i.v was successful.
+# Compile of decoder.v was successful.
+# Compile of PC_reg7.v was successful.
+# 10 compiles, 0 failed with no errors. 
+restart
+# Loading work.system
+# Loading work.processor
+# Loading work.registerFile
+# Loading work.decoder
+# Loading work.PC_reg7
+# Loading work.register16bits
+# Loading work.mux4_1_16bits
+# Loading work.alu
+# Loading work.register16bits_i
+# Loading work.memory_main
+run -all
+add wave -position insertpoint  \
+sim:/system/mem1/addr
+restart
+run -all
+# Compile of memory_main.v was successful.
+# Compile of processor.v was successful.
+# Compile of system.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of alu.v was successful.
+# Compile of mux4_1_16bits.v was successful.
+# Compile of register16bits.v was successful.
+# Compile of register16bits_i.v was successful.
+# Compile of decoder.v was successful.
+# Compile of PC_reg7.v was successful.
+# 10 compiles, 0 failed with no errors. 
+restart
+# Loading work.system
+# Loading work.processor
+# Loading work.registerFile
+# Loading work.decoder
+# Loading work.PC_reg7
+# Loading work.register16bits
+# Loading work.mux4_1_16bits
+# Loading work.alu
+# Loading work.register16bits_i
+# Loading work.memory_main
+run -all
+add wave -position insertpoint  \
+sim:/system/proc1/ReadAddressRF2
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/joao/altera/LAOCI/Pratica_9/pratica9/simulation/LOAD/load.do
+wave editwrite -file /home/joao/altera/LAOCI/Pratica_9/pratica9/simulation/LOAD/load.do -append
+# Compile of memory_main.v was successful.
+# Compile of processor.v was successful.
+# Compile of system.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of alu.v was successful.
+# Compile of mux4_1_16bits.v was successful.
+# Compile of register16bits.v was successful.
+# Compile of register16bits_i.v was successful.
+# Compile of decoder.v was successful.
+# Compile of PC_reg7.v was successful.
+# 10 compiles, 0 failed with no errors. 
+restart
+# Loading work.system
+# Loading work.processor
+# Loading work.registerFile
+# Loading work.decoder
+# Loading work.PC_reg7
+# Loading work.register16bits
+# Loading work.mux4_1_16bits
+# Loading work.alu
+# Loading work.register16bits_i
+# Loading work.memory_main
+run -all
+add wave -position insertpoint  \
+sim:/system/mem1/data
+restart
+run -all
+add wave -position insertpoint  \
+{sim:/system/mem1/Mem[26]}
+restart
+run -all
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/joao/altera/LAOCI/Pratica_9/pratica9/simulation/STORE/store.do
+wave editwrite -file /home/joao/altera/LAOCI/Pratica_9/pratica9/simulation/STORE/store.do -append
+# Compile of memory_main.v was successful.
+# Compile of processor.v was successful.
+# Compile of system.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of alu.v was successful.
+# Compile of mux4_1_16bits.v was successful.
+# Compile of register16bits.v was successful.
+# Compile of register16bits_i.v was successful.
+# Compile of decoder.v was successful.
+# Compile of PC_reg7.v was successful.
+# 10 compiles, 0 failed with no errors. 
+restart
+# Loading work.system
+# Loading work.processor
+# Loading work.registerFile
+# Loading work.decoder
+# Loading work.PC_reg7
+# Loading work.register16bits
+# Loading work.mux4_1_16bits
+# Loading work.alu
+# Loading work.register16bits_i
+# Loading work.memory_main
+run -all
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf /home/joao/altera/LAOCI/Pratica_9/pratica9/simulation/COPY_INPUT/copy_input.do
+wave editwrite -file /home/joao/altera/LAOCI/Pratica_9/pratica9/simulation/COPY_INPUT/copy_input.do -append

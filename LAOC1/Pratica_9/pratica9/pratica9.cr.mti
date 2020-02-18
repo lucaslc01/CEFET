@@ -1,0 +1,71 @@
+/home/joao/altera/LAOCI/Pratica_9/pratica9/PC_reg7.v {1 {vlog -work work /home/joao/altera/LAOCI/Pratica_9/pratica9/PC_reg7.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module PC_reg7
+
+Top level modules:
+	PC_reg7
+
+} {} {}} /home/joao/altera/LAOCI/Pratica_9/pratica9/processor.v {1 {vlog -work work /home/joao/altera/LAOCI/Pratica_9/pratica9/processor.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module processor
+
+Top level modules:
+	processor
+
+} {} {}} /home/joao/altera/LAOCI/Pratica_9/pratica9/memory_main.v {1 {vlog -work work /home/joao/altera/LAOCI/Pratica_9/pratica9/memory_main.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module memory_main
+
+Top level modules:
+	memory_main
+
+} {} {}} /home/joao/altera/LAOCI/Pratica_9/pratica9/system.v {1 {vlog -work work /home/joao/altera/LAOCI/Pratica_9/pratica9/system.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module system
+
+Top level modules:
+	system
+
+} {} {}} /home/joao/altera/LAOCI/Pratica_9/pratica9/registerFile.v {1 {vlog -work work /home/joao/altera/LAOCI/Pratica_9/pratica9/registerFile.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module registerFile
+
+Top level modules:
+	registerFile
+
+} {} {}} /home/joao/altera/LAOCI/Pratica_9/pratica9/alu.v {1 {vlog -work work /home/joao/altera/LAOCI/Pratica_9/pratica9/alu.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} /home/joao/altera/LAOCI/Pratica_9/pratica9/mux4_1_16bits.v {1 {vlog -work work /home/joao/altera/LAOCI/Pratica_9/pratica9/mux4_1_16bits.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux4_1_16bits
+
+Top level modules:
+	mux4_1_16bits
+
+} {} {}} /home/joao/altera/LAOCI/Pratica_9/pratica9/register16bits.v {1 {vlog -work work /home/joao/altera/LAOCI/Pratica_9/pratica9/register16bits.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module register16bits
+
+Top level modules:
+	register16bits
+
+} {} {}} /home/joao/altera/LAOCI/Pratica_9/pratica9/register16bits_i.v {1 {vlog -work work /home/joao/altera/LAOCI/Pratica_9/pratica9/register16bits_i.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module register16bits_i
+
+Top level modules:
+	register16bits_i
+
+} {} {}} /home/joao/altera/LAOCI/Pratica_9/pratica9/decoder.v {1 {vlog -work work /home/joao/altera/LAOCI/Pratica_9/pratica9/decoder.v
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module decoder
+
+Top level modules:
+	decoder
+
+} {} {}}

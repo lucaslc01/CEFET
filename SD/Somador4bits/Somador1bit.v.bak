@@ -1,0 +1,12 @@
+//somador de 1 bit
+
+module Somador1bit(x,y,te0,s0,ts0); 
+
+input x,y,te0;
+output s0,ts0;
+
+wire ts,s;
+assign s = ((x)^(y)^te0);
+assign ts = ((x & y)|(x & te0)|(y & te0));
+
+endmodule

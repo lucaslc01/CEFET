@@ -1,0 +1,33 @@
+|Somador
+X => S.IN0
+X => TS.IN0
+X => TS.IN0
+Y => S.IN1
+Y => TS.IN1
+Y => TS.IN0
+TE => S.IN1
+TE => TS.IN1
+TE => TS.IN1
+HEX0[6] <= decodificador:BLOCO1.port1
+HEX0[5] <= decodificador:BLOCO1.port1
+HEX0[4] <= decodificador:BLOCO1.port1
+HEX0[3] <= decodificador:BLOCO1.port1
+HEX0[2] <= decodificador:BLOCO1.port1
+HEX0[1] <= decodificador:BLOCO1.port1
+HEX0[0] <= decodificador:BLOCO1.port1
+
+
+|Somador|decodificador:BLOCO1
+E[0] => Decoder0.IN3
+E[1] => Decoder0.IN2
+E[2] => Decoder0.IN1
+E[3] => Decoder0.IN0
+HEX0[6] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[5] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[4] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[2] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[1] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+HEX0[0] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+
+

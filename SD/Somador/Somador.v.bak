@@ -1,0 +1,16 @@
+module Somador(A,B,TE,HEX0);
+
+input  A,B,TE;
+
+output [0:6] HEX0;
+
+wire  TS,S;
+
+assign TS =((S)^(Y)^(TE));
+
+assign  S =((X&Y)|(X)&(TE)|(Y)&(TE));
+
+
+wire [3:0] soma={2'b00,TS,S}
+
+endmodule 

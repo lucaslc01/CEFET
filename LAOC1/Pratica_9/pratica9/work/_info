@@ -1,0 +1,197 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/joao/altera/LAOCI/Pratica_9
+valu
+Z1 !s100 5FJKkTBK?3Uai1=gTj4:f1
+Z2 I9AGOEY<>`Hj@e0JlGY_ko2
+Z3 VoSF5G>ic<fCB_0PJVSG5X2
+Z4 d/home/joao/altera/LAOCI/Pratica_9/pratica9
+Z5 w1562028036
+Z6 8/home/joao/altera/LAOCI/Pratica_9/pratica9/alu.v
+Z7 F/home/joao/altera/LAOCI/Pratica_9/pratica9/alu.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|/home/joao/altera/LAOCI/Pratica_9/pratica9/alu.v|
+Z10 o-work work -O0
+Z11 !s108 1562129527.827705
+Z12 !s107 /home/joao/altera/LAOCI/Pratica_9/pratica9/alu.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder
+Z13 !s100 FI7I]UnN3mkcl4Q@nz72I3
+Z14 IhK>bc]V=1R]22JL=A6Ted3
+Z15 VdKE1md<gJULDQ:716mZ]]1
+R4
+Z16 w1562030349
+Z17 8/home/joao/altera/LAOCI/Pratica_9/pratica9/decoder.v
+Z18 F/home/joao/altera/LAOCI/Pratica_9/pratica9/decoder.v
+L0 1
+R8
+r1
+31
+Z19 !s90 -reportprogress|300|-work|work|/home/joao/altera/LAOCI/Pratica_9/pratica9/decoder.v|
+R10
+!i10b 1
+!s85 0
+Z20 !s108 1562129527.912621
+Z21 !s107 /home/joao/altera/LAOCI/Pratica_9/pratica9/decoder.v|
+!s101 -O0
+vmemory_main
+Z22 Il^lN8ADAMk^fdB[<AC0>Z3
+Z23 VeGU^Foz=mYKe?9ZB3lOQ12
+R4
+Z24 w1562129522
+Z25 8/home/joao/altera/LAOCI/Pratica_9/pratica9/memory_main.v
+Z26 F/home/joao/altera/LAOCI/Pratica_9/pratica9/memory_main.v
+L0 1
+R8
+r1
+31
+Z27 !s90 -reportprogress|300|-work|work|/home/joao/altera/LAOCI/Pratica_9/pratica9/memory_main.v|
+R10
+Z28 !s100 cmQEh40=o89YQ5M97Nzda1
+Z29 !s108 1562129527.743345
+Z30 !s107 /home/joao/altera/LAOCI/Pratica_9/pratica9/memory_main.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vmux4_1_16bits
+Z31 !s100 0@UfWe]iWS=oaBLTSlc3=3
+Z32 I5YPTW9:cViV1IZDYXQCh82
+Z33 VLCzD3aM6W]G]`T:UXim<43
+R4
+Z34 w1562028044
+Z35 8/home/joao/altera/LAOCI/Pratica_9/pratica9/mux4_1_16bits.v
+Z36 F/home/joao/altera/LAOCI/Pratica_9/pratica9/mux4_1_16bits.v
+L0 1
+R8
+r1
+31
+Z37 !s90 -reportprogress|300|-work|work|/home/joao/altera/LAOCI/Pratica_9/pratica9/mux4_1_16bits.v|
+R10
+Z38 !s108 1562129527.850617
+Z39 !s107 /home/joao/altera/LAOCI/Pratica_9/pratica9/mux4_1_16bits.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vPC_reg7
+!i10b 1
+Z40 !s100 BXZ>J_k05of7C]@B`A4=R1
+Z41 IMYHOOami6GLJn_z2EWXmQ2
+Z42 V>NOcD@H9l0F=k8C8J5CB@2
+R4
+Z43 w1562028111
+Z44 8/home/joao/altera/LAOCI/Pratica_9/pratica9/PC_reg7.v
+Z45 F/home/joao/altera/LAOCI/Pratica_9/pratica9/PC_reg7.v
+L0 1
+R8
+r1
+!s85 0
+31
+!s108 1562129527.933029
+!s107 /home/joao/altera/LAOCI/Pratica_9/pratica9/PC_reg7.v|
+Z46 !s90 -reportprogress|300|-work|work|/home/joao/altera/LAOCI/Pratica_9/pratica9/PC_reg7.v|
+!s101 -O0
+R10
+Z47 n@p@c_reg7
+vprocessor
+Z48 !s100 61]6>`10?aLI_gEo8UFk@3
+Z49 I:[OUZZ=[dYb37VjVB4HDY2
+Z50 VBY2?5A7=hR;b8CidhnPhJ0
+R4
+Z51 w1562128240
+Z52 8/home/joao/altera/LAOCI/Pratica_9/pratica9/processor.v
+Z53 F/home/joao/altera/LAOCI/Pratica_9/pratica9/processor.v
+L0 1
+R8
+r1
+31
+Z54 !s90 -reportprogress|300|-work|work|/home/joao/altera/LAOCI/Pratica_9/pratica9/processor.v|
+R10
+Z55 !s108 1562129527.764038
+Z56 !s107 /home/joao/altera/LAOCI/Pratica_9/pratica9/processor.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vregister16bits
+Z57 !s100 [Jb<BCdT5H6;6Ogd_eNdF2
+Z58 I=_jnZe18YaNcQ3znHJdCo0
+Z59 VDGY[j?5kH4P098z9Y]6iV2
+R4
+Z60 w1562028033
+Z61 8/home/joao/altera/LAOCI/Pratica_9/pratica9/register16bits.v
+Z62 F/home/joao/altera/LAOCI/Pratica_9/pratica9/register16bits.v
+L0 1
+R8
+r1
+31
+Z63 !s90 -reportprogress|300|-work|work|/home/joao/altera/LAOCI/Pratica_9/pratica9/register16bits.v|
+R10
+Z64 !s108 1562129527.871652
+Z65 !s107 /home/joao/altera/LAOCI/Pratica_9/pratica9/register16bits.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vregister16bits_i
+Z66 !s100 GD;XC>8`BN0UFZQM:k@8;2
+Z67 IPG9TRPZERiz7CAEBcY[?42
+Z68 VhNk:^eJVB:e7c>E3VjC7a3
+R4
+Z69 w1562028041
+Z70 8/home/joao/altera/LAOCI/Pratica_9/pratica9/register16bits_i.v
+Z71 F/home/joao/altera/LAOCI/Pratica_9/pratica9/register16bits_i.v
+L0 1
+R8
+r1
+31
+Z72 !s90 -reportprogress|300|-work|work|/home/joao/altera/LAOCI/Pratica_9/pratica9/register16bits_i.v|
+R10
+Z73 !s108 1562129527.892153
+Z74 !s107 /home/joao/altera/LAOCI/Pratica_9/pratica9/register16bits_i.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vregisterFile
+Z75 !s100 C?]YcHAmD;h`BHRkFZ48z3
+Z76 IGRPKU=[:3K<60RcRaC?k[3
+Z77 V_Z0OaaLUJN^1D_EgMWcO02
+R4
+Z78 w1562030997
+Z79 8/home/joao/altera/LAOCI/Pratica_9/pratica9/registerFile.v
+Z80 F/home/joao/altera/LAOCI/Pratica_9/pratica9/registerFile.v
+L0 1
+R8
+r1
+31
+Z81 !s90 -reportprogress|300|-work|work|/home/joao/altera/LAOCI/Pratica_9/pratica9/registerFile.v|
+R10
+Z82 nregister@file
+Z83 !s108 1562129527.806722
+Z84 !s107 /home/joao/altera/LAOCI/Pratica_9/pratica9/registerFile.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vsystem
+Z85 !s100 <5:JX];S`m`[lggi3ZaAR2
+Z86 I>?cV8>YAnA4;AVjX4Bbkm3
+Z87 VHVTF1M2>?H0?bd@[`>bZL2
+R4
+Z88 w1432216446
+Z89 8/home/joao/altera/LAOCI/Pratica_9/pratica9/system.v
+Z90 F/home/joao/altera/LAOCI/Pratica_9/pratica9/system.v
+L0 1
+R8
+r1
+31
+Z91 !s90 -reportprogress|300|-work|work|/home/joao/altera/LAOCI/Pratica_9/pratica9/system.v|
+R10
+Z92 !s108 1562129527.786338
+Z93 !s107 /home/joao/altera/LAOCI/Pratica_9/pratica9/system.v|
+!i10b 1
+!s85 0
+!s101 -O0

@@ -1,0 +1,9 @@
+Testes executados para geração da simulação:
+
+#1 Escrever o valor 20 no endereço 5.
+#2 Escrever o valor 111 no endereço 10.
+#3 Ler o valor no endereço 15 (verificar a leitura de um registrador não escrito).
+#4 Ler o valor no endereço 5.
+#5 Ler o valor no endereço 15 (verificar a leitura de um registrador não escrito).
+#6 Escrever o valor 3 no endereço 5 (reescrever em um registrador).
+#7 Ler o valor no endereço 5 (ler logo após a escrita).

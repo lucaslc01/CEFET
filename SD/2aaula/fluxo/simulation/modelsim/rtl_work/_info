@@ -1,0 +1,25 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Aluno\Desktop\2aaula\fluxo\simulation\modelsim
+vporta_exor
+!i10b 1
+!s100 @;;<Hfj<bO1lXiQD4lQic2
+I0_=m5SDT^d52RhF_`IIdB0
+VL8?f6PKkGZY=BWOUGEAhP3
+Z1 dC:\Users\Aluno\Desktop\2aaula\fluxo\simulation\modelsim
+w1535048830
+8C:/Users/Aluno/Desktop/2aaula/fluxo/porta_exor.v
+FC:/Users/Aluno/Desktop/2aaula/fluxo/porta_exor.v
+L0 3
+OV;L;10.1d;51
+r1
+!s85 0
+31
+!s108 1535048858.136000
+!s107 C:/Users/Aluno/Desktop/2aaula/fluxo/porta_exor.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Aluno/Desktop/2aaula/fluxo|C:/Users/Aluno/Desktop/2aaula/fluxo/porta_exor.v|
+!s101 -O0
+o-vlog01compat -work work -O0
+!s92 -vlog01compat -work work +incdir+C:/Users/Aluno/Desktop/2aaula/fluxo -O0
